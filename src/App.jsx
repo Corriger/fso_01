@@ -1,34 +1,16 @@
-import React from 'react';
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import Header from './components/Header.jsx';
-import Content from './components/Content.jsx';
-import Total from './components/Total.jsx';
+import { useState } from 'react'
 
-function App() {
-  const course = 'Half Stack application development'
-const parts = [
-    {
-      name: 'Fundamentals of React',
-      exercises: 10
-    },
-    {
-      name: 'Using props to pass data',
-      exercises: 7
-    },
-    {
-      name: 'State of a component',
-      exercises: 14
-    }
-  ]
+const App = () => {
+  // save clicks of each button to its own state
+  const [good, setGood] = useState(0)
+  const [neutral, setNeutral] = useState(0)
+  const [bad, setBad] = useState(0)
+
   return (
     <div>
-      <Header course={course} />
-      <Content parts={parts} />
-      <Total parts={parts} />
+      code here
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
