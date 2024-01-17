@@ -1,12 +1,16 @@
-import React from "react";
+import React from "react"
+// import StatSingle from "./StatSingle.jsx"
 
 const Stats = (props) => {
   return (
     <>
+    <strong>
+
+    </strong>
       <ul>
-        <li text="good" value ={props} />
-        <li text="neutral" value ={} />
-        <li text="bad" value ={} />
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </>
   )
